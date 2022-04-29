@@ -1,0 +1,56 @@
+{
+  "name": "graph-db-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^12.20.10",
+    "@types/react": "^17.0.4",
+    "@types/react-dom": "^17.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "typescript": "^4.2.4",
+    "web-vitals": "^1.1.1",
+    "@chakra-ui/react": "^1.1.4",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^3.2.1",
+    "sass": "^1.32.5",
+    "@apollo/client": "^3.3.7",
+    "graphql": "^15.4.0"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "apollo:download-schema": "apollo client:download-schema schema.graphql",
+    "apollo:generate-types": "rm -rf __generated__ && apollo client:codegen --target typescript --outputFlat",
+    "apollo:sync": "npm run apollo:download-schema && npm run apollo:generate-types"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "apollo": "^2.32.1"
+  }
+}
