@@ -1,8 +1,8 @@
 module.exports = {
   client: {
     service: {
-      name: "SpaceX",
-      url: "https://api.spacex.land/graphql/",
+      name: "Sax Sux",
+      url: "https://green-feather-470090.ap-south-1.aws.cloud.dgraph.io/graphql",
     },
   },
 };
